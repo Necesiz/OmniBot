@@ -1,1 +1,5 @@
-
+pyrogram==2.2.0
+pymongo[srv]==4.4.1
+aiohttp==3.8.5
+dnspython==2.4.2
+apscheduler==3.10.1
