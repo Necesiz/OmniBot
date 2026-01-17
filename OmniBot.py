@@ -30,6 +30,12 @@ async def echo_cmd(client, message):
     await stats.record_message(message, client)  # günlük stats
     await filter.check_message(message, client)  # söyüş filteri
 
+@app.on_message(filters.command("id"))
+async def id_cmd(client, message):
+    await user_id.show_id(message, client)
+
+
+
 # Qrup aktivliyi üçün periodic suallar
 questions.schedule_questions(app)
 
