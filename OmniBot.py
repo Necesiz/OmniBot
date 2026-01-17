@@ -6,9 +6,9 @@ from Plugins import welcome
 from pyrogram import filters
 
 app = Client("OmniBotSession", 
-api_id=YOUR_API_ID,
-api_hash="YOUR_API_HASH", 
-bot_token="YOUR_BOT_TOKEN")
+api_id=23860620,
+api_hash="347c94d92d0bbcfbc223651b73d71345", 
+bot_token="8533476973:AAGtXR0dLk4jByOzPRjf6A8JB04tJA3UCRY")
 
 # Start komutu
 @app.on_message(filters.command("start"))
