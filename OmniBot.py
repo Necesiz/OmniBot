@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from Plugins import start, help, tag, user_id, stats, welcome, active_users, filter, questions, broadcast
+from Plugins import start, help, tag, user_id, stats, welcome, active_users, questions, broadcast
 from Plugins import stats
 from pyrogram import Client, filters
 from Plugins import welcome
