@@ -2,6 +2,8 @@ from pyrogram import Client, filters
 from Plugins import start, help, tag, user_id, stats, welcome, active_users, filter, questions, broadcast
 from Plugins import stats
 from pyrogram import Client, filters
+from Plugins import welcome
+from pyrogram import filters
 
 app = Client("OmniBotSession", 
 api_id=YOUR_API_ID,
@@ -51,6 +53,10 @@ async def top_cmd(client, message):
 async def top_month_cmd(client, message):
     await stats.top_month(client, message)
 
+# Yeni üzv gəldikdə salamla
+@app.on_message(filters.new_chat_members)
+async def new_member(client, message):
+    await welcome.welcome_new_member(client, message)
 
 # Qrup aktivliyi üçün periodic suallar
 questions.schedule_questions(app)
