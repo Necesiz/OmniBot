@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 import asyncio
 
-MONGO_URI = "YOUR_MONGO_URI_HERE"
+MONGO_URI = "mongodb+srv://Omnibot:Omni123@cluster0.ksvp6ly.mongodb.net/?appName=Cluster0"
 mongo_client = MongoClient(MONGO_URI)
 db = mongo_client["omnibot"]
 groups_col = db["groups"]           # Botun işlədiyi qruplar
