@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from Plugins import start, help, tag, user_id, stats, welcome, active_users, questions, broadcast
+from Plugins import start, help, tag, user_id, stats, welcome, active_users, broadcast
 from Plugins import stats
 from pyrogram import Client, filters
 from Plugins import welcome
@@ -59,6 +59,5 @@ async def new_member(client, message):
     await welcome.welcome_new_member(client, message)
 
 # Qrup aktivliyi üçün periodic suallar
-questions.schedule_questions(app)
 
 app.run()
