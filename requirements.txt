@@ -1,4 +1,4 @@
-pyrogram==2.2.0
+pyrogram==2.0.106
 pymongo[srv]==4.4.1
 aiohttp==3.8.5
 dnspython==2.4.2
