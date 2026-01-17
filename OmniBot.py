@@ -17,7 +17,7 @@ async def help_cmd(client, message):
     await help.help_message(message, client)
 
 # Digər pluginləri əlavə et
-@app.on_message(filters.command("tag"))
+@app.on_message(filters.command(["tag", "tag5"]))
 async def tag_cmd(client, message):
     await tag.tag_users(message, client)
 
