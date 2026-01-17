@@ -3,7 +3,7 @@ from pymongo import MongoClient, UpdateOne
 from datetime import datetime
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-MONGO_URI = "YOUR_MONGO_URI_HERE"  # Mongo URI-ni buraya əlavə et
+MONGO_URI = "mongodb+srv://Omnibot:Omni123@cluster0.ksvp6ly.mongodb.net/?appName=Cluster0"  # Mongo URI-ni buraya əlavə et
 mongo_client = MongoClient(MONGO_URI)
 
 # Database və collection-lar
